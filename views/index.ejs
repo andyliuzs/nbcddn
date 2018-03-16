@@ -1,46 +1,7 @@
-<!doctype html>
-<html>
-<head>
-    <title><%= title %></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="keywords"
-          content="Chattle Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design"/>
-    <script type="application/x-javascript"> addEventListener("load", function () {
-            setTimeout(hideURLbar, 0);
-        }, false);
 
-        function hideURLbar() {
-            window.scrollTo(0, 1);
-        } </script>
-    <link rel="stylesheet" href="/css/flexslider.css" type="text/css" media="screen"/>
-    <!--bootstrap-->
-    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-    <!--coustom css-->
-    <link href="/css/style.css" rel="stylesheet" type="text/css"/>
-    <!--default-js-->
-    <script src="/js/jquery-2.1.4.min.js"></script>
-    <!--bootstrap-js-->
-    <script src="/js/bootstrap.min.js"></script>
-</head>
-<body>
-<div class="header">
-    <div class="container">
-        <div class="logo">
-            <h1><a href="index.html"><%= companyName %></a></h1>
-        </div>
-        <div class="head-mid">
-            <p>邮箱 : </p>
-            <p><a href="mailto:673988904@qq.com">673988904@qq.com</a></p>
-        </div>
-        <div class="ad-ph">
-            <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
-            <p>热线 : </p><br>
-            <p>+123 456 7890</p>
-        </div>
-        <div class="clearfix"></div>
-    </div>
-</div>
+
+<!--header-->
+<%-include publicview/header.ejs%>
 <div class="header_nav" id="home">
     <div class="container">
         <nav class="navbar navbar-default chn-gd">
@@ -62,7 +23,7 @@
                     <li class="active">
                         <a href="/">
                             <span class="glyphicon glyphicon-home " aria-hidden="true"></span>
-                            首 页
+                            <%= menuNames[0]%>
                         </a>
                     </li>
                     <!---->
@@ -81,17 +42,17 @@
                     </li>
                     <!---->
                     <li>
-                        <a href="projects.html">
+                        <a href="/projects">
                             <span class="glyphicon glyphicon-thumbs-up " aria-hidden="true"></span>
-                            项 目
+                            成功案例
                         </a>
                     </li>
                     <!---->
                     <!--<li>-->
-                        <!--<a>-->
-                            <!--<span class=" empty-title ">        </span>-->
+                    <!--<a>-->
+                    <!--<span class=" empty-title ">        </span>-->
 
-                        <!--</a>-->
+                    <!--</a>-->
                     <!--</li>-->
                     <li class="las">
                         <a href="/contact">
@@ -175,8 +136,7 @@
 <!-- sha -->
 <div class="sha">
 </div>
-<!-- sha -->
-<div class="copyrights">Collect from <a href="http://www.cssmoban.com/">企业网站模板</a></div>
+
 <!-- welcome -->
 <div class="welcome">
     <div class="container">
@@ -341,42 +301,8 @@
     </div>
 </div>
 <!--  majority -->
-<!--  footer -->
-<div class="footer">
-    <div class="container">
-        <div class="col-md-4 contact-left">
 
-            <h4>Address</h4>
-            <address>
-                795 Folsom Ave, Suite 600<br>
-                San Francisco, CA 94107<br>
-                <abbr title="Phone">P :</abbr> (123) 456-7890
-            </address>
-        </div>
-        <div class="col-md-4 contact-left">
-
-            <h4>Phone/Fax</h4>
-            <p>Phone : +1234567890 </p>
-            <p>Phone : +1234567890 </p>
-            <p>Fax : +1234567890 </p>
-        </div>
-        <div class="col-md-4 contact-left">
-
-            <h4>Email</h4>
-            <p>Email-1 : <a href="mailto:info@example.com">info@mycompany.com</a></p>
-            <p>Emai-2 : <a href="mailto:info@example.com">info@mycompany.com</a></p>
-            <p>Email-3 : <a href="mailto:info@example.com">info@mycompany.com</a></p>
-        </div>
-        <div class="clearfix"></div>
-
-        <div class="copyright">
-            <p>Copyright &copy; 2015.Company name All rights reserved.<a target="_blank"
-                                                                         href="http://www.cssmoban.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>
-            </p>
-
-        </div>
-    </div>
-</div>
-<!--  footer -->
+<!--footer-->
+<%- include publicview/footer.ejs %>
 </body>
 </html>
